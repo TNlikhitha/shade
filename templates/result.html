@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation Matcher Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        
+     header h1 {
+    text-align: center;
+     }
+   
+        body {
+            background-color: #FED9ED;
+        }
+        nav{
+            background-color: #E7BCDE;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Matching Foundation Shade</h1>
+        </header>
+        <main>
+            <section class="result">
+                <p><strong>Brand:</strong> {{ brand }}</p>
+                <p><strong>Product:</strong> {{ product }}</p>
+                <p><strong>Hex Color Code:</strong> 
+                    <span class="color-box" style="background-color: {{ hex_code }};">{{ hex_code }}</span>
+                </p>
+                <img src="{{ image_url }}" alt="Uploaded Image" class="uploaded-image">
+            </section>
+            <nav>
+                <a href="{{ url_for('index') }}" class="try-again">Try another image</a>
+            </nav>
+        </main>
+    </div>
+</body>
+</html>

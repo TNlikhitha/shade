@@ -1,0 +1,162 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation Matcher</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/templates\index.html">Home</a></li>
+            <li><a href="/uploadtemplates\Blog.html">Blog</a></li>
+            <li><a href="/templates\Aboutus.html">Aboutus</a></li> 
+           
+        </ul>
+    </nav>
+    <main>
+        <h1>Upload Your Image</h1>
+        <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*">
+            <input type="submit" value="Upload">
+        </form>
+    </main>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation Matcher</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+<style>
+    body {
+        background-color: #FED9ED;
+    }
+    nav{
+        background-color: #E7BCDE;
+    }
+</style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+           
+            <li><a href="#" class="title" style="font-weight: bold; color:#26355D; text-decoration: none; font-size: 24px;">ShadeSavvy</a></li>
+
+
+        </ul>
+    </nav>
+    
+    <main>
+        <h1>Upload Your Image Know Your Foundation Shade</h1>
+        <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*">
+            <input type="submit" value="Upload">
+        </form>
+    </main>
+
+
+    <section id="about" class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h2>About Us</h2>
+                <p>Welcome to Foundation Matcher! We are a team of passionate individuals dedicated to revolutionizing the way people find their perfect foundation match.</p>
+                <p>Our mission is to empower everyone to feel confident and beautiful in their own skin by providing personalized foundation recommendations tailored to their unique skin tones and types.</p>
+                <p>At Foundation Matcher, we leverage cutting-edge technology and expertise in cosmetics to deliver accurate and reliable results. Whether you're a makeup enthusiast or a beauty novice, we're here to help you discover the ideal foundation that enhances your natural beauty.</p>
+                <p>Join us on this journey to redefine beauty standards and celebrate diversity. Together, let's find your flawless match!</p>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section id="blog" class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h2 class="text-center">Latest Blog Posts</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Post Title 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit justo eget est feugiat, vel hendrerit urna dapibus.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Post Title 2</h5>
+                        <p class="card-text">Praesent vel dolor et eros consequat ultricies. Cras nec velit vel sem sodales tristique sed et eros.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Post Title 3</h5>
+                        <p class="card-text">Nulla facilisi. Curabitur nec interdum sapien. Aliquam erat volutpat.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section id="contact" class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-center">Contact Us</h2>
+                <p class="text-center">Have questions? We'd love to hear from you. Contact us using the information below or fill out the form.</p>
+                <ul class="list-unstyled">
+                    <li><strong>Address:</strong> 123 Foundation St, Beauty Town, Beautiful State, ZIP</li>
+                    <li><strong>Email:</strong> info@foundationmatcher.com</li>
+                    <li><strong>Phone:</strong> +123 456 7890</li>
+                </ul>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid bg-dark text-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 Foundation Matcher. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <p>Designed and developed by ShadeSavvy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+     
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
